@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply cursor-pointer hover:text-primary transition-colors
+  }
+}
+
+html {
+  font-size: 18px;
+  line-height: 130%;
+}
