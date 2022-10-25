@@ -3,15 +3,6 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      content: {
-        arrowDownIcon: 'url("./src/assets/arrow-down.svg")',
-        envelopIcon: 'url("./src/assets/envelope.svg")',
-        telegramIcon: 'url("./src/assets/telegram.svg")',
-        whatsappIcon: 'url("./src/assets/whatsapp.svg")',
-        linkedinIcon: 'url("./src/assets/linkedin.svg")',
-        githubIcon: 'url("./src/assets/github.svg")',
-        codewarsIcon: 'url("./src/assets/codewars.svg")',
-      },
     },
     screens: {
       '2xl': '1320px',

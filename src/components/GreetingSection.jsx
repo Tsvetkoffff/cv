@@ -1,5 +1,7 @@
 import React from 'react'
 import Photo from '../assets/photo.png'
+import {ReactComponent as EnvelopLogo} from '../assets/icons/envelope.svg'
+import {ReactComponent as ArrowDownLogo} from '../assets/icons/arrow-down.svg'
 
 const GreetingSection = () => {
   const socials = [
@@ -35,10 +37,12 @@ const GreetingSection = () => {
             <br /> Frontend developer
           </h1>
           <div className='flex justify-between'>
-            <button className='bg-primary hover:bg-primaryDark text-white py-[16px] pl-[72px] pr-[40px] rounded-md relative before:content-envelopIcon before:absolute before:left-10 before:top-[17px] transition-all'>
+            <button className='bg-primary hover:bg-primaryDark text-white py-[16px] pl-[72px] pr-[40px] rounded-md relative transition-all'>
+              <EnvelopLogo className='absolute top-5 left-8' />
               contact me
             </button>
-            <button className='bg-white hover:border-primaryDark hover:text-primaryDark py-[16px] pl-[69px] pr-[40px] ml-7 border rounded-md border-black relative before:content-arrowDownIcon before:absolute before:left-10 before:top-[17px] transition-all'>
+            <button className='bg-white hover:border-primaryDark hover:text-primaryDark py-[16px] pl-[69px] pr-[40px] ml-7 border rounded-md border-black relative transition-all'>
+              <ArrowDownLogo className='absolute top-5 left-8' />
               download cv
             </button>
           </div>
