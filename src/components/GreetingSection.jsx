@@ -39,7 +39,7 @@ const GreetingSection = () => {
           <p className='mb-7 pl-5 relative before:content-[""] before:block before:absolute before:top-[8px] before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-primary'>
             ready to work
           </p>
-          <h1 className='text-4xl mb-10'>
+          <h1 className='text-4xl mb-10 font-medium'>
             {`<Hello!/>`}
             <br /> I am Vyacheslav,
             <br /> Frontend developer
