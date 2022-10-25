@@ -1,25 +1,33 @@
 import React from 'react'
 import Photo from '../assets/photo.png'
-import {ReactComponent as EnvelopLogo} from '../assets/icons/envelope.svg'
-import {ReactComponent as ArrowDownLogo} from '../assets/icons/arrow-down.svg'
+import {ReactComponent as EnvelopIcon} from '../assets/icons/envelope.svg'
+import {ReactComponent as ArrowDownIcon} from '../assets/icons/arrow-down.svg'
+import {ReactComponent as TelegramIcon} from '../assets/icons/telegram.svg'
+import {ReactComponent as LinkedinIcon} from '../assets/icons/linkedin.svg'
+import {ReactComponent as GithubIcon} from '../assets/icons/github.svg'
+import {ReactComponent as CodewarsIcon} from '../assets/icons/codewars.svg'
 
 const GreetingSection = () => {
   const socials = [
-    {name: 'telegram', link: 'https://t.me/tsvetkoffff', icon: 'telegramIcon'},
     {
-      name: 'linkedin',
+      name: 'Telegram',
+      link: 'https://t.me/tsvetkoffff',
+      icon: <TelegramIcon />,
+    },
+    {
+      name: 'Linkedin',
       link: 'https://www.linkedin.com/in/slava-tsvetkof-769b96252/',
-      icon: 'linkedinIcon',
+      icon: <LinkedinIcon />,
     },
     {
-      name: 'github',
+      name: 'Github',
       link: 'https://github.com/Tsvetkoffff',
-      icon: 'githubIcon',
+      icon: <GithubIcon />,
     },
     {
-      name: 'codewars',
+      name: 'Codewars',
       link: 'https://www.codewars.com/users/rsschool_ced8d958720098e8',
-      icon: 'codewarsIcon',
+      icon: <CodewarsIcon />,
     },
   ]
 
@@ -38,27 +46,22 @@ const GreetingSection = () => {
           </h1>
           <div className='flex justify-between'>
             <button className='bg-primary hover:bg-primaryDark text-white py-[16px] pl-[72px] pr-[40px] rounded-md relative transition-all'>
-              <EnvelopLogo className='absolute top-5 left-8' />
+              <EnvelopIcon className='absolute top-5 left-8' />
               contact me
             </button>
             <button className='bg-white hover:border-primaryDark hover:text-primaryDark py-[16px] pl-[69px] pr-[40px] ml-7 border rounded-md border-black relative transition-all'>
-              <ArrowDownLogo className='absolute top-5 left-8' />
+              <ArrowDownIcon className='absolute top-5 left-8' />
               download cv
             </button>
           </div>
         </div>
-        {/* <ul className='fixed right-[13%] top-[200px]'>
+        <ul className='fixed right-[13%] top-[200px]'>
           {socials.map(social => (
-            <li>
-              <a
-                href={social.link}
-                className={`before:content-${social.icon} before:rounded-full`}
-              >
-                <span>{social.name}</span>
-              </a>
+            <li key={social.name}>
+              <a href={social.link}>{social.icon}</a>
             </li>
           ))}
-        </ul> */}
+        </ul>
       </div>
     </section>
   )
