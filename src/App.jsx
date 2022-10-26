@@ -5,12 +5,12 @@ import Navigation from './components/Navigation'
 const App = () => {
   return (
     <>
-      <header className='container font-medium text'>
+      <header className='container'>
         <Navigation />
       </header>
-      <main>
+      {/* <main>
         <GreetingSection />
-      </main>
+      </main> */}
     </>
   )
 }
