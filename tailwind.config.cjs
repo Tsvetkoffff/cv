@@ -2,15 +2,19 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {
-    },
+    extend: {},
     screens: {
-      '2xl': '1320px',
+      md: '768px',
+      lg: '1280px',
+      xl: '1440px',
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: '5%',
+        DEFAULT: '10px',
+        md: '20px',
+        lg: '40px',
+        xl: '60px',
       },
     },
     colors: {
@@ -18,11 +22,11 @@ module.exports = {
       primary: '#00BFB2',
       primaryDark: '#038E85',
       primaryLigth: 'rgba(0, 191, 178, 0.1)',
-      grey: '#F0F2F2',
-      dark: '#393E59',
-      black: '#010326',
-      lightGray: '#F0F2F2',
       white: '#FFFFFF',
+      grey: '#F0F2F2',
+      lightGray: '#F0F2F2',
+      dark: '#393E59',
+      darker: '#010326',
       orange: '#FFEDE1',
       blue: '#EBF4FF',
     },
