@@ -4,11 +4,15 @@
 
 @layer components {
   .nav-link {
-    @apply cursor-pointer hover:text-primary transition-colors
+    @apply cursor-pointer hover:text-primary transition-colors p-2
   }
 }
 
 html {
   font-size: 18px;
   line-height: 130%;
+}
+
+body {
+  padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
