@@ -23,7 +23,7 @@ const Navigation = () => {
     >
       <Logo className='w-[32px] h-[32px] md:w-[40px] md:h-[40px]' />
       <div
-        className={`fixed flex flex-col space-y-10 z-10 h-full right-0 top-0 justify-center p-10 shadow-2xl bg-white box-border transition-all duration-500 md:static md:flex-row md:space-y-0 md:p-0 md:shadow-none md:bg-none md:items-center md:flex-grow md:justify-end
+        className={`fixed flex flex-col space-y-10 z-10 h-full right-0 top-0 justify-center p-10 shadow-2xl bg-white box-border text-grey tracking-tightest font-medium transition-all duration-500 md:static md:flex-row md:space-y-0 md:p-0 md:shadow-none md:bg-none md:items-center md:flex-grow md:justify-end
         ${areMenuClose && '-right-full'}
         `}
       >
@@ -44,7 +44,7 @@ const Navigation = () => {
         </ul>
       </div>
 
-      <div
+      <button
         className='cursor-pointer w-[26px] h-[22px] relative z-20 md:hidden'
         onClick={() => menuBtnHandleClick()}
       >
@@ -63,7 +63,7 @@ const Navigation = () => {
             !areMenuClose && '-rotate-45 top-1/2'
           }`}
         ></span>
-      </div>
+      </button>
       <div
         className={`absolute top-0 right-0 bottom-0 left-0 z-[5] cursor-pointer ${
           areMenuClose && 'hidden'
