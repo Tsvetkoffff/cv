@@ -5,12 +5,12 @@ import Navigation from './components/Navigation'
 const App = () => {
   return (
     <>
-      <header className='container'>
+      <header className='my-container'>
         <Navigation />
       </header>
-      {/* <main>
+      <main className='my-container'>
         <GreetingSection />
-      </main> */}
+      </main>
     </>
   )
 }

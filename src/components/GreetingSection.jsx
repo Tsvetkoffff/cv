@@ -32,36 +32,27 @@ const GreetingSection = () => {
   ]
 
   return (
-    <section className='container flex bg-grey rounded-[40px]'>
-      <img src={Photo} alt='It`s my photo' className='pt-24 pb-48' />
-      <div>
-        <div className='p-28'>
-          <p className='mb-7 pl-5 relative before:content-[""] before:block before:absolute before:top-[8px] before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-primary'>
-            ready to work
-          </p>
-          <h1 className='text-4xl mb-10 font-medium'>
-            {`<Hello!/>`}
-            <br /> I am Vyacheslav,
-            <br /> Frontend developer
-          </h1>
-          <div className='flex justify-between'>
-            <button className='bg-primary hover:bg-primaryDark text-white py-[16px] pl-[72px] pr-[40px] rounded-md relative transition-all'>
-              <EnvelopIcon className='absolute top-5 left-8' />
-              contact me
-            </button>
-            <button className='bg-white hover:border-primaryDark hover:text-primaryDark py-[16px] pl-[69px] pr-[40px] ml-7 border rounded-md border-black relative transition-all'>
-              <ArrowDownIcon className='absolute top-5 left-8' />
-              download cv
-            </button>
-          </div>
+    <section className='bg-lightGray rounded-2xl p-3 pb-14 flex flex-col sm:flex-row'>
+      <img src={Photo} alt='This is my photo' className='w-28 h-28 mt-4 sm:w-36 sm:h-36 md:w-48 md:h-48 md:mt-6' />
+      <div className='sm:ml-8'>
+        <p className='mt-4 pl-6 text-sm tracking-tightest text-grey relative before:absolute before:w-[12px] before:h-[12px] before:bg-primary before:rounded-full before:left-0 before:top-[5px] md:mt-6'>
+          ready to work
+        </p>
+        <h2 className='mt-4 font-medium text-dark tracking-tightest text-[1.4em] leading-[130%]'>
+          {'<Hello!/>'}
+          <br /> I am Slava
+          <br /> Frontend developer
+        </h2>
+        <div className='flex flex-col items-start mt-6 space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4'>
+          <button className='box-border w-[167px] py-[12px] pl-6 bg-primary text-white font-medium tracking-tightest rounded-md uppercase relative hover:bg-primaryDark transition-all duration-300'>
+            <EnvelopIcon className='absolute left-[20px] top-[50%] -translate-y-1/2'/>
+            <span>contact me</span>
+          </button>
+          <button className='box-border w-[167px] py-[12px] pl-7 bg-white border border-grey text-gray font-medium tracking-tightest rounded-md uppercase relative hover:border-primaryDark hover:text-primaryDark hover:fill-primaryDark transition-all duration-300'>
+            <ArrowDownIcon className='absolute left-[20px] top-[50%] -translate-y-1/2'/>
+            <span>download cv</span>
+          </button>
         </div>
-        <ul className='fixed right-[13%] top-[200px]'>
-          {socials.map(social => (
-            <li key={social.name}>
-              <a href={social.link}>{social.icon}</a>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   )

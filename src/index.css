@@ -8,6 +8,12 @@
   }
 }
 
+@layer components {
+  .my-container {
+    @apply container box-border min-w-[320px]
+  }
+}
+
 html {
   font-size: 18px;
   line-height: 130%;
