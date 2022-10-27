@@ -32,7 +32,7 @@ const GreetingSection = () => {
   ]
 
   return (
-    <section className='bg-lightGray rounded-2xl p-3 pb-14 flex flex-col sm:flex-row'>
+    <section className='bg-lightGray rounded-2xl p-3 pb-14 flex flex-col items-center sm:flex-row'>
       <img src={Photo} alt='This is my photo' className='w-28 h-28 mt-4 sm:w-36 sm:h-36 md:w-48 md:h-48 md:mt-6' />
       <div className='sm:ml-8'>
         <p className='mt-4 pl-6 text-sm tracking-tightest text-grey relative before:absolute before:w-[12px] before:h-[12px] before:bg-primary before:rounded-full before:left-0 before:top-[5px] md:mt-6'>
