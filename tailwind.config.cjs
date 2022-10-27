@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
+      sm: '500px',
       md: '768px',
-      lg: '1280px',
+      lg: '1024px',
       xl: '1440px',
     },
     container: {
       center: true,
       padding: {
         DEFAULT: '10px',
+        sm: '10px',
         md: '20px',
         lg: '40px',
         xl: '60px',
@@ -23,9 +25,9 @@ module.exports = {
       primaryDark: '#038E85',
       primaryLigth: 'rgba(0, 191, 178, 0.1)',
       white: '#FFFFFF',
-      grey: '#F0F2F2',
+      grey: '#393E59',
       lightGray: '#F0F2F2',
-      dark: '#393E59',
+      dark: '#010326',
       darker: '#010326',
       orange: '#FFEDE1',
       blue: '#EBF4FF',
@@ -33,6 +35,16 @@ module.exports = {
     fontFamily: {
       sans: ['IBM Plex Mono', 'monospace'],
     },
+    letterSpacing: {
+      tightest: '-.083em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
+      widest: '.25em',
+    }
   },
   plugins: [],
 }
