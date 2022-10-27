@@ -1,6 +1,7 @@
 import React from 'react'
-import GreetingSection from './components/GreetingSection'
+import GreetSection from './components/GreetSection'
 import Navigation from './components/Navigation'
+import SocialBar from './components/SocialBar';
 
 const App = () => {
   return (
@@ -8,8 +9,9 @@ const App = () => {
       <header className='my-container'>
         <Navigation />
       </header>
-      <main className='my-container'>
-        <GreetingSection />
+      <main className='my-container relative'>
+        <GreetSection />
+        <SocialBar />
       </main>
     </>
   )
