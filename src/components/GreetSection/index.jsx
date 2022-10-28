@@ -1,7 +1,8 @@
 import React from 'react'
-import Photo from '../assets/photo.png'
-import ButtonPrimary from './ButtonPrimary'
-import ButtonWhite from './ButtonWhite'
+import Photo from '/src/assets/photo.png'
+import Button from '/src/components/Button'
+import {ReactComponent as EnvelopIcon} from '/src/assets/icons/envelope.svg'
+import {ReactComponent as ArrowDownIcon} from '/src/assets/icons/arrow-down.svg'
 
 const GreetingSection = () => {
   return (
@@ -19,8 +20,12 @@ const GreetingSection = () => {
           <br /> Frontend developer
         </h2>
         <div className='greet-section__buttons-wrapper'>
-          <ButtonPrimary />
-          <ButtonWhite />
+          <Button text={'contact me'} mod='button--primary'>
+            <EnvelopIcon />
+          </Button>
+          <Button text={'download cv'} mod='button--white'>
+            <ArrowDownIcon />
+          </Button>
         </div>
       </div>
     </section>

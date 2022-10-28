@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {ReactComponent as Logo} from '../assets/icons/logo.svg'
-import useSetBodyScroll from './../hooks/bodyScroll'
+import {ReactComponent as Logo} from '/src/assets/icons/logo.svg'
+import useSetBodyScroll from '/src/hooks/bodyScroll'
 import {useEffect} from 'react'
 
 const Navigation = () => {
@@ -45,7 +45,7 @@ const Navigation = () => {
       </div>
 
       <button
-        className='cursor-pointer w-[26px] h-[22px] relative z-20 md:hidden'
+        className={`cursor-pointer w-[26px] h-[22px] ${areMenuClose && 'relative'} ${!areMenuClose && 'absolute right-2'} z-20 md:hidden `}
         onClick={() => menuBtnHandleClick()}
       >
         <span

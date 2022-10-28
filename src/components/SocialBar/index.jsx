@@ -1,15 +1,15 @@
 import React from 'react'
-import {ReactComponent as TelegramIcon} from '../assets/icons/telegram.svg'
-import {ReactComponent as LinkedinIcon} from '../assets/icons/linkedin.svg'
-import {ReactComponent as GithubIcon} from '../assets/icons/github.svg'
-import {ReactComponent as CodewarsIcon} from '../assets/icons/codewars.svg'
+import {ReactComponent as TelegramIcon} from '/src/assets/icons/telegram.svg'
+import {ReactComponent as LinkedinIcon} from '/src/assets/icons/linkedin.svg'
+import {ReactComponent as GithubIcon} from '/src/assets/icons/github.svg'
+import {ReactComponent as CodewarsIcon} from '/src/assets/icons/codewars.svg'
 
 const SocialBar = () => {
   const socials = [
     {
       name: 'Telegram',
       link: 'https://t.me/tsvetkoffff',
-      icon: <TelegramIcon className='w-16'/>,
+      icon: <TelegramIcon className='w-16' />,
     },
     {
       name: 'Linkedin',

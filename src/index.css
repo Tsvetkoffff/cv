@@ -1,3 +1,7 @@
+@import './components/GreetSection/greet-section.css';
+@import './components/Button/button.css';
+@import './components/Navigation/navigation.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,32 +17,16 @@
   }
   /* buttons */
   .button {
-    @apply box-border w-[167px] py-[12px] pl-6 font-medium tracking-tightest rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0
+    @apply box-border w-[167px] py-[12px] pl-6 font-medium tracking-tightest rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0;
   }
   .button--primary {
-    @apply bg-primary text-white hover:bg-primaryDark
+    @apply bg-primary text-white hover:bg-primaryDark;
   }
   .button--white {
-    @apply bg-white text-grey border border-grey hover:border-primaryDark hover:text-primaryDark hover:fill-primaryDark
+    @apply bg-white text-grey border border-grey hover:border-primaryDark hover:text-primaryDark hover:fill-primaryDark;
   }
   .button-icon {
-    @apply absolute left-[20px] top-[50%] -translate-y-1/2
-  }
-  /* greet section */
-  .greet-section {
-    @apply relative bg-lightGray rounded-2xl p-3 pt-4 pb-14 flex flex-col items-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0 md:pt-6 md:pb-16 lg:space-x-16 lg:pt-16 lg:pl-8 xl:pb-28 xl:pl-20 xl:pt-20 xl:space-x-28
-  }
-  .greet-section__status {
-    @apply pl-6 text-sm tracking-tightest text-grey relative before:absolute before:w-[12px] before:h-[12px] before:bg-primary before:rounded-full before:left-0 before:top-[5px] lg:text-base lg:before:top-[8px]
-  }
-  .greet-section__photo {
-    @apply w-28 h-28 self-start sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-60 lg:h-60
-  }
-  .greet-section__heading {
-    @apply mt-4 font-medium text-dark tracking-tightest text-[1.4em] leading-[130%] lg:leading-[130%] lg:text-4xl xl:leading-[130%] xl:text-5xl
-  }
-  .greet-section__buttons-wrapper {
-    @apply flex flex-col items-start mt-6 space-y-4  lg:flex-row lg:space-y-0 lg:space-x-4
+    @apply absolute left-[20px] top-[50%] -translate-y-1/2;
   }
 }
 

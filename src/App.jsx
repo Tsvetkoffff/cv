@@ -1,7 +1,7 @@
 import React from 'react'
-import GreetSection from './components/GreetSection'
-import Navigation from './components/Navigation'
-import SocialBar from './components/SocialBar';
+import GreetSection from '/src/components/GreetSection'
+import Navigation from '/src/components/Navigation'
+import SocialBar from '/src/components/SocialBar'
 
 const App = () => {
   return (
