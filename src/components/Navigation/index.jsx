@@ -45,7 +45,7 @@ const Navigation = () => {
       </div>
 
       <button
-        className={`cursor-pointer w-[26px] h-[22px] ${areMenuClose && 'relative'} ${!areMenuClose && 'absolute right-2'} z-20 md:hidden `}
+        className={`cursor-pointer w-[26px] h-[22px] relative ${areMenuClose && 'relative'} ${!areMenuClose && 'sm:absolute sm:right-2'} z-20 md:hidden `}
         onClick={() => menuBtnHandleClick()}
       >
         <span
