@@ -1,6 +1,7 @@
 @import './components/GreetSection/greet-section.css';
 @import './components/Button/button.css';
 @import './components/Navigation/navigation.css';
+@import './components/BurgerButton/burger-button.css';
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +13,7 @@
     @apply container box-border min-w-[320px];
   }
   /* links */
-  .nav-link {
+  .link {
     @apply cursor-pointer hover:text-primary transition-colors p-2;
   }
   /* buttons */

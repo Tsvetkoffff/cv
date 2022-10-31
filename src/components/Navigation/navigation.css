@@ -1,3 +1,17 @@
 @layer components {
-  
+  .navigation {
+    @apply flex h-[58px] box-border items-center justify-between p-3;
+  }
+  .navigation__logo {
+    @apply w-[32px] h-[32px] md:w-[40px] md:h-[40px];
+  }
+  .navigation__menu-wrapper {
+    @apply fixed flex flex-col space-y-10 z-10 h-full right-0 top-0 justify-center p-10 shadow-2xl bg-white box-border text-grey tracking-tightest font-medium transition-all duration-500 md:static md:flex-row md:space-y-0 md:p-0 md:shadow-none md:bg-none md:items-center md:flex-grow md:justify-end;
+  }
+  .navigation__links-list {
+    @apply flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-12 mx-auto;
+  }
+  .navigation__langs-list {
+    @apply flex self-end md:self-auto md:justify-self-end;
+  }
 }
