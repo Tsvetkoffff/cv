@@ -1,0 +1,5 @@
+@layer components {
+  .section-header {
+    @apply relative font-medium text-dark tracking-tightest text-[1.4em] leading-[130%] lg:leading-[130%] lg:text-4xl xl:leading-[130%] xl:text-5xl;
+  }
+}
