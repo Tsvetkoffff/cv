@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {ReactComponent as Logo} from '/src/assets/icons/logo.svg'
 import useSetBodyScroll from '/src/hooks/bodyScroll'
-import {useLayoutEffect} from 'react'
 import BurgerButton from '../BurgerButton/index'
 import NavList from '../NavList'
 
@@ -17,11 +16,8 @@ const Navigation = () => {
 
   const menuBtnHandleClick = () => {
     setAreMenuClose(prev => !prev)
-  }
-
-  useLayoutEffect(() => {
     setBodyScroll(prev => !prev)
-  }, [areMenuClose])
+  }
 
   return (
     <nav className='navigation'>
