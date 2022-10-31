@@ -1,7 +1,7 @@
-@import './components/GreetSection/greet-section.css';
-@import './components/Button/button.css';
-@import './components/Navigation/navigation.css';
-@import './components/BurgerButton/burger-button.css';
+@import './components/GreetSection';
+@import './components/Button';
+@import './components/Navigation';
+@import './components/BurgerButton';
 
 @tailwind base;
 @tailwind components;

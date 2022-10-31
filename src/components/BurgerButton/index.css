@@ -3,6 +3,6 @@
     @apply cursor-pointer w-[26px] h-[22px] relative z-20 md:hidden;
   }
   .button-line {
-    @apply absolute h-[4px] box-border bg-dark rounded-full left-0 right-0 transition-all duration-500;
+    @apply absolute h-[4px] bg-dark rounded-full left-0 right-0 transition-all duration-500;
   }
 }
