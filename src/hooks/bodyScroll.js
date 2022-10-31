@@ -4,10 +4,10 @@ const useSetBodyScroll = () => {
   const [bodyScroll, setBodyScroll] = useState(true)
 
   useEffect(() => {
-    if (!bodyScroll) {
-      document.body.style.overflowY = 'hidden'
-    } else {
+    if (bodyScroll) {
       document.body.style.overflowY = 'scroll'
+    } else {
+      document.body.style.overflowY = 'hidden'
     }
   }, [bodyScroll])
 
