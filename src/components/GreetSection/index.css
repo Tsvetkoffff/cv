@@ -1,9 +1,9 @@
 @layer components {
   .greet-section {
-    @apply relative bg-lightGray rounded-2xl p-3 pt-4 pb-14 flex justify-center sm:justify-start md:pt-6 md:pb-16 lg:pt-16 lg:pl-8 xl:pt-20 xl:pb-28 xl:pl-20;
+    @apply bg-lightGray flex justify-center sm:justify-start
   }
   .greet-section__warpper {
-    @apply flex flex-col space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0 lg:space-x-16 xl:space-x-28
+    @apply flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:w-full
   }
   .greet-section__status {
     @apply pl-6 text-sm tracking-tightest text-grey relative before:absolute before:w-[12px] before:h-[12px] before:bg-primary before:rounded-full before:left-0 before:top-[5px] lg:text-base lg:before:top-[8px];

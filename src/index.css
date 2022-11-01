@@ -3,6 +3,7 @@
 @import './components/Navigation';
 @import './components/BurgerButton';
 @import './components/SectionHeader';
+@import './components/Section';
 
 @tailwind base;
 @tailwind components;

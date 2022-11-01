@@ -3,17 +3,20 @@ import Photo from '/src/assets/photo.png'
 import Button from '/src/components/Button'
 import {ReactComponent as EnvelopIcon} from '/src/assets/icons/envelope.svg'
 import {ReactComponent as ArrowDownIcon} from '/src/assets/icons/arrow-down.svg'
+import Section from './../Section/index'
 
 const GreetingSection = () => {
   return (
-    <section className='greet-section'>
+    <Section className='greet-section'>
       <div className='greet-section__warpper'>
-        <img
-          src={Photo}
-          alt='This is my photo'
-          className='greet-section__photo'
-        />
-        <div>
+        <div className='sm:w-2/5'>
+          <img
+            src={Photo}
+            alt='This is my photo'
+            className='greet-section__photo'
+          />
+        </div>
+        <div className=''>
           <p className='greet-section__status'>ready to work</p>
           <h2 className='greet-section__heading'>
             {'<Hello!/>'}
@@ -30,7 +33,7 @@ const GreetingSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

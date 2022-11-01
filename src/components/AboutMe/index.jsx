@@ -1,11 +1,12 @@
 import React from 'react'
 import SectionHeader from '../SectionHeader'
 import {ReactComponent as TagIcon} from '/src/assets/icons/tag-icon.svg'
+import Section from '/src/components/Section'
 
 const AboutMe = () => {
   return (
-    <section className='about-section'>
-      <div className='about-section__wrapper py-9 space-y-5'>
+    <Section className='about-section'>
+      <div className='about-section__wrapper space-y-5'>
         <SectionHeader text='About_me' dot={true} />
         <div className='description-wrapper flex flex-col space-y-7 md:space-y-0 md:flex-row-reverse  md:justify-end'>
           <p className='about-section__description text-justify text-sm box-border md:p-3 md:w-[46%]'>
@@ -20,7 +21,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 
