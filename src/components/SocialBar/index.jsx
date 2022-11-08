@@ -9,7 +9,7 @@ const SocialBar = () => {
     {
       name: 'Telegram',
       link: 'https://t.me/tsvetkoffff',
-      icon: <TelegramIcon className='w-16' />,
+      icon: <TelegramIcon />,
     },
     {
       name: 'Linkedin',
@@ -28,12 +28,14 @@ const SocialBar = () => {
     },
   ]
   return (
-    <div className='hidden absolute md:flex md:flex-col md:top-4 md:right-8 lg:right-14 xl:top-20 xl:right-24'>
-      {socials.map(item => (
-        <a href={item.link} key={item.name}>
-          {item.icon}
-        </a>
-      ))}
+    <div className='hidden absolute md:block md:h-full md:top-0 md:right-[25px] lg:right-[45px] xl:right-[80px]'>
+      <div className='sticky md:flex md:flex-col md:top-[80px] lg:top-[106px] xl:top-[150px]'>
+        {socials.map(item => (
+          <a href={item.link} key={item.name}>
+            {item.icon}
+          </a>
+        ))}
+      </div>
     </div>
   )
 }
