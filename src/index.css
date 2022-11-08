@@ -4,6 +4,7 @@
 @import './components/BurgerButton';
 @import './components/SectionHeader';
 @import './components/Section';
+@import './components/SocialBar';
 
 @tailwind base;
 @tailwind components;
