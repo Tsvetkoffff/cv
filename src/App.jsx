@@ -4,6 +4,7 @@ import Navigation from '/src/components/Navigation'
 import SocialBar from '/src/components/SocialBar'
 import AboutMe from '/src/components/AboutMe'
 import MySkills from '/src/components/MySkills'
+import MyEducation from '/src/components/MyEducation'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <GreetSection />
         <AboutMe />
         <MySkills />
+        <MyEducation />
       </main>
     </>
   )
