@@ -4,11 +4,7 @@ import SectionHeader from './../SectionHeader/index'
 import Text from '/src/components/Text'
 import SkillsList from '/src/components/SkillsList';
 
-const MySkills = () => {
-
-  const technologies = ['HTML5', 'CSS3', 'SASS', 'JavaScript', 'TypeScript', 'NodeJS', 'WebPack']
-  const libraries = ['Tailwind', 'Bootstrap', 'Material UI', 'Axios', 'AntD']
-  const frameworks = ['React', 'Redux', 'Redux Toolkit', 'RTK Query', 'React Router Dom']
+const MySkills = ({technologies, libraries, frameworks}) => {
 
   return (
     <Section className='bg-lightGray'>
