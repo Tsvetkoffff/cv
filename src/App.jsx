@@ -6,6 +6,8 @@ import AboutMe from '/src/components/AboutMe'
 import MySkills from '/src/components/MySkills'
 import MyEducation from '/src/components/MyEducation'
 import Portfolio from '/src/components/Portfolio'
+import Line from '/src/components/Line'
+import Contacts from '/src/components/Contacts'
 
 const App = () => {
   const technologies = [
@@ -42,6 +44,10 @@ const App = () => {
         <MyEducation />
         <Portfolio />
       </main>
+      <footer className='my-container'>
+        <Line />
+        <Contacts />
+      </footer>
     </>
   )
 }
