@@ -1,15 +1,15 @@
 import React from 'react'
 import SectionHeader from '../SectionHeader'
 import {ReactComponent as TagIcon} from '/src/assets/icons/tag-icon.svg'
-import Section from '/src/components/Section'
+import Section from '/src/components/common/Section'
 
-const AboutMe = () => {
+const About = () => {
   return (
-    <Section className='about-section' id='about'>
-      <div className='about-section__wrapper space-y-5'>
+    <Section id='about'>
+      <div className='space-y-5'>
         <SectionHeader text='About_me' dot={true} />
-        <div className='description-wrapper flex flex-col space-y-7 md:space-y-0 md:flex-row-reverse  md:justify-end'>
-          <p className='about-section__description text-justify text-sm box-border md:p-3 md:w-[46%]'>
+        <div className='flex flex-col space-y-7 md:space-y-0 md:flex-row-reverse  md:justify-end'>
+          <p className='text-justify text-sm box-border md:p-3 md:w-[46%]'>
             I am a junior front-end developer, very passionate about development
             and web technologies. Currently looking for commercial development
             experience, preferably in a team of professionals. I am sure that
@@ -25,4 +25,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default About

@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '/src/components/Section'
+import Section from '/src/components/common/Section'
 import SectionHeader from '/src/components/SectionHeader'
 import EducationCard from '/src/components/EducationCard'
 

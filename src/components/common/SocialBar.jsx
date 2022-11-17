@@ -28,8 +28,8 @@ const SocialBar = () => {
     },
   ]
   return (
-    <div className='social-bar-wrapper'>
-      <div className='social-bar'>
+    <div className='hidden absolute z-10 md:block md:h-full md:top-0 md:right-[25px] lg:right-[45px] xl:right-[80px]'>
+      <div className='sticky md:flex md:flex-col md:top-[80px] lg:top-[106px] xl:top-[150px]'>
         {socials.map(item => (
           <a href={item.link} key={item.name}>
             {item.icon}

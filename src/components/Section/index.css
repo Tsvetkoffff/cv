@@ -1,5 +1,0 @@
-@layer components {
-  .section {
-    @apply relative rounded-2xl p-3 pt-9 pb-14 flex md:pt-10 md:pb-16 lg:pt-16 lg:pl-8 xl:pt-20 xl:pb-24 xl:pl-20;
-  }
-}

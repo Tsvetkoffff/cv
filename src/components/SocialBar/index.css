@@ -1,8 +1,0 @@
-@layer components {
-  .social-bar-wrapper {
-    @apply hidden absolute z-10 md:block md:h-full md:top-0 md:right-[25px] lg:right-[45px] xl:right-[80px];
-  }
-  .social-bar {
-    @apply sticky md:flex md:flex-col md:top-[80px] lg:top-[106px] xl:top-[150px];
-  }
-}

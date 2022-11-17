@@ -1,10 +1,27 @@
 import React from 'react'
-import Section from '/src/components/Section'
-import SectionHeader from './../SectionHeader/index'
+import Section from '/src/components/common/Section'
+import SectionHeader from '../SectionHeader/index'
 import Text from '/src/components/Text'
 import SkillsList from '/src/components/SkillsList';
 
-const MySkills = ({technologies, libraries, frameworks}) => {
+const Skills = () => {
+  const technologies = [
+    'HTML5',
+    'CSS3',
+    'SASS',
+    'JavaScript',
+    'TypeScript',
+    'NodeJS',
+    'WebPack',
+  ]
+  const libraries = ['Tailwind', 'Bootstrap', 'Material UI', 'Axios', 'AntD']
+  const frameworks = [
+    'React',
+    'Redux',
+    'Redux Toolkit',
+    'RTK Query',
+    'React Router Dom',
+  ]
 
   return (
     <Section className='bg-lightGray'>
@@ -29,4 +46,4 @@ const MySkills = ({technologies, libraries, frameworks}) => {
   )
 }
 
-export default MySkills
+export default Skills
