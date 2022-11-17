@@ -1,6 +1,5 @@
 @import './components/GreetSection';
 @import './components/Button';
-@import './components/Navigation';
 @import './components/BurgerButton';
 @import './components/SectionHeader';
 @import './components/Section';
@@ -32,6 +31,10 @@
   .button-icon {
     @apply absolute left-[20px] top-[50%] -translate-y-1/2;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
