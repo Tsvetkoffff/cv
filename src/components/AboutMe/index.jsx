@@ -5,7 +5,7 @@ import Section from '/src/components/Section'
 
 const AboutMe = () => {
   return (
-    <Section className='about-section'>
+    <Section className='about-section' id='about'>
       <div className='about-section__wrapper space-y-5'>
         <SectionHeader text='About_me' dot={true} />
         <div className='description-wrapper flex flex-col space-y-7 md:space-y-0 md:flex-row-reverse  md:justify-end'>

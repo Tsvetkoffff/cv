@@ -1,14 +1,9 @@
 import React from 'react'
-import LangListItem from './LangListItem'
 
-const LangList = () => {
-  const list = ['en', 'ru']
-
+const LangList = ({children}) => {
   return (
     <ul className='flex self-end md:self-auto md:justify-self-end'>
-      {list.map(item => (
-        <LangListItem key={item} text={item} />
-      ))}
+      {children}
     </ul>
   )
 }

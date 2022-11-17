@@ -27,7 +27,7 @@ const Portfolio = () => {
   ]
   
   return (
-    <Section>
+    <Section id='portfolio'>
       <div className='space-y-4'>
         <SectionHeader text='Portfolio' dot={true} />
         <div className='flex flex-col gap-5 md:flex-row md:flex-wrap'>

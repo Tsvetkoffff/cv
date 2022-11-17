@@ -1,9 +1,9 @@
 import React from 'react'
 
-const LangListItem = ({text}) => {
+const LangListItem = ({text, setAreMenuClose}) => {
   return (
     <li className='link'>
-      <a href='#'>
+      <a href='#' onClick={() => setAreMenuClose(true)}>
         {text.toUpperCase()}
       </a>
     </li>
