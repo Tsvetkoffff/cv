@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '/src/components/common/Section'
 import SectionHeader from '/src/components/SectionHeader'
-import SkillsList from '/src/components/SkillsList'
+import SkillsList from '/src/components/Main/Skills/SkillsList'
 import ProjectCard from '/src/components/ProjectCard'
 
 const Portfolio = () => {

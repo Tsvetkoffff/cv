@@ -9,7 +9,7 @@
   }
   /* buttons */
   .button {
-    @apply box-border w-[167px] py-[12px] pl-6 font-medium tracking-tightest rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0;
+    @apply box-border w-[167px] py-[12px] pl-6 font-medium rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0;
   }
   .button--primary {
     @apply bg-primary text-white hover:bg-primaryDark;
@@ -24,10 +24,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-size: 18px;
 }
 
 body {
