@@ -7,10 +7,6 @@
   .my-container {
     @apply container box-border min-w-[320px];
   }
-  /* links */
-  .link {
-    @apply cursor-pointer hover:text-primary transition-colors p-2;
-  }
   /* buttons */
   .button {
     @apply box-border w-[167px] py-[12px] pl-6 font-medium tracking-tightest rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0;
@@ -32,8 +28,6 @@
 
 html {
   font-size: 18px;
-  line-height: 130%;
-  @apply tracking-tightest;
 }
 
 body {
