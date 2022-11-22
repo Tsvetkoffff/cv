@@ -1,7 +1,9 @@
 import React from 'react'
 import Section from '/src/components/common/Section'
-import SectionHeader from '/src/components/SectionHeader'
-import EducationCard from '/src/components/EducationCard'
+import Heading from '/src/components/common/Heading'
+import EducationCard from '/src/components/Main/Education/EducationCard'
+import Wrapper from '/src/components/Main/Education/Wrapper'
+import EducationCardsWrapper from '/src/components/Main/Education/EducationCardsWrapper'
 
 const MyEducation = () => {
   const courses = [
@@ -38,11 +40,11 @@ const MyEducation = () => {
   ]
   return (
     <Section>
-      <div className='w-full flex flex-col space-y-4'>
-        <div>
-          <SectionHeader text='My_Education' dot={true} />
-        </div>
-        <div className='flex flex-col flex-wrap gap-y-5 md:flex-row md:gap-x-9 xl:gap-y-12'>
+      <Wrapper>
+        <Heading Tag='h2' className='text-dark' dot>
+          My_Education
+        </Heading>
+        <EducationCardsWrapper>
           {courses.map(course => (
             <EducationCard
               key={course.id}
@@ -50,8 +52,8 @@ const MyEducation = () => {
               description={course.description}
             />
           ))}
-        </div>
-      </div>
+        </EducationCardsWrapper>
+      </Wrapper>
     </Section>
   )
 }
