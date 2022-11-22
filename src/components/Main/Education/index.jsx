@@ -1,6 +1,8 @@
 import React from 'react'
+
 import Section from '/src/components/common/Section'
 import Heading from '/src/components/common/Heading'
+
 import EducationCard from '/src/components/Main/Education/EducationCard'
 import Wrapper from '/src/components/Main/Education/Wrapper'
 import EducationCardsWrapper from '/src/components/Main/Education/EducationCardsWrapper'
