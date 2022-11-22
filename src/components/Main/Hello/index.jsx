@@ -23,7 +23,7 @@ const Hello = () => {
         </PhotoContainer>
         <ContantContainer>
           <Status />
-          <Heading Tag='h1'>
+          <Heading Tag='h1' className='text-dark'>
             {'<Hello!/>'}
             <br /> I am Slava
             <br /> Frontend developer
