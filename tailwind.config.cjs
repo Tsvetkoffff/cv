@@ -35,6 +35,44 @@ module.exports = {
     fontFamily: {
       sans: ['IBM Plex Mono', 'monospace'],
     },
+    fontSize: {
+      'xs': ['0.75rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      'sm': ['0.875rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      'base': ['1rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      'lg': ['1.125rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      'xl': ['1.25rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      '2xl': ['1.5rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      '3xl': ['1.875rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      '4xl': ['2.25rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+      '5xl': ['3rem', {
+        lineHeight: '130%',
+        letterSpacing: '-1.5px',
+      }],
+    },
   },
   plugins: [],
 }
