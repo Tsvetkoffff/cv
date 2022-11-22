@@ -6,7 +6,7 @@ const Button = ({text, mod, children}) => {
   })
   
   return (
-    <button className={`box-border border w-[167px] py-[12px] pl-6 font-medium tracking-tightest rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0 ${mod}`}>
+    <button className={`border w-[167px] py-[12px] pl-6 font-medium tracking-tightest rounded-md uppercase relative transition-all duration-300 xl:w-[207px] xl:pl-0 ${mod}`}>
       {icon}
       <span>{text}</span>
     </button>
