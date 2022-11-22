@@ -1,11 +1,11 @@
 import React from 'react'
 import Section from '/src/components/common/Section'
-import SectionHeader from '/src/components/SectionHeader'
+import Heading from '/src/components/common/Heading';
 
 const Contacts = () => {
   return (
     <Section className='flex-col gap-5 font-medium' id='contacts'>
-      <SectionHeader text='Contacts' dot={true} />
+      <Heading Tag='h2' dot >Contacts</Heading>
       <div className='flex flex-col gap-4 md:flex-row md:gap-10'>
         <div className='flex flex-col gap-4'>
           <a href="tel:+79885438666">+ 7 (988) 543 86 66</a>
