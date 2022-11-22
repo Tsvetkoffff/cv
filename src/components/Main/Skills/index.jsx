@@ -1,11 +1,13 @@
 import React from 'react'
+
 import Section from '/src/components/common/Section'
 import Text from '/src/components/common/Text'
-import SkillsList from '/src/components/Main/Skills/SkillsList'
 import Heading from '/src/components/common/Heading'
-import Wrapper from '/src/components/Main/Skills/Wrapper';
-import TextContentWrapper from './TextContentWrapper';
-import ListContentWrapper from './ListContentWrapper';
+
+import SkillsList from '/src/components/Main/Skills/SkillsList'
+import Wrapper from '/src/components/Main/Skills/Wrapper'
+import TextContentWrapper from '/src/components/Main/Skills/TextContentWrapper'
+import ListContentWrapper from '/src/components/Main/Skills/ListContentWrapper'
 
 const Skills = () => {
   const technologies = [
