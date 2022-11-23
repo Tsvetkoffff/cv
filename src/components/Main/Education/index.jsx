@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Section from '/src/components/common/Section'
 import Heading from '/src/components/common/Heading'
 
 import EducationCard from '/src/components/Main/Education/EducationCard'
@@ -41,22 +40,20 @@ const MyEducation = () => {
     },
   ]
   return (
-    <Section>
-      <Wrapper>
-        <Heading Tag='h2' className='text-dark' dot>
-          My_Education
-        </Heading>
-        <EducationCardsWrapper>
-          {courses.map(course => (
-            <EducationCard
-              key={course.id}
-              period={course.period}
-              description={course.description}
-            />
-          ))}
-        </EducationCardsWrapper>
-      </Wrapper>
-    </Section>
+    <Wrapper>
+      <Heading Tag='h2' className='text-dark' dot>
+        My_Education
+      </Heading>
+      <EducationCardsWrapper>
+        {courses.map(course => (
+          <EducationCard
+            key={course.id}
+            period={course.period}
+            description={course.description}
+          />
+        ))}
+      </EducationCardsWrapper>
+    </Wrapper>
   )
 }
 

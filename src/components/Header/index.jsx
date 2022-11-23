@@ -15,8 +15,9 @@ const Header = () => {
 
   const links = [
     {id: 'about', text: 'About me'},
+    {id: 'skills', text: 'Skills'},
+    {id: 'education', text: 'Education'},
     {id: 'portfolio', text: 'Portfolio'},
-    {id: 'contacts', text: 'Contacts'},
   ]
 
   const langs = ['en', 'ru']

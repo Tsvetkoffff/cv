@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Section from '/src/components/common/Section'
 import Heading from '/src/components/common/Heading'
 import Text from '/src/components/common/Text'
 
@@ -10,7 +9,6 @@ import TagIcon from './TagIcon'
 
 const About = () => {
   return (
-    <Section id='about'>
       <Wrapper>
         <Heading Tag='h2' dot>
           About_me
@@ -26,7 +24,6 @@ const About = () => {
           <TagIcon />
         </ContentContainer>
       </Wrapper>
-    </Section>
   )
 }
 

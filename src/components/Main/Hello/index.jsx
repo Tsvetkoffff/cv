@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Button from '/src/components/common/Button'
-import Section from '/src/components/common/Section'
 import Heading from '/src/components/common/Heading'
 
 import Wrapper from '/src/components/Main/Hello/Wrapper'
@@ -16,7 +15,6 @@ import {ReactComponent as EnvelopIcon} from '/src/assets/icons/envelope.svg'
 
 const Hello = () => {
   return (
-    <Section className='bg-lightGray'>
       <Wrapper>
         <PhotoContainer>
           <Photo />
@@ -38,7 +36,6 @@ const Hello = () => {
           </ButtonsContainer>
         </ContantContainer>
       </Wrapper>
-    </Section>
   )
 }
 

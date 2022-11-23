@@ -1,6 +1,7 @@
 import React from 'react'
-import Section from '/src/components/common/Section'
+
 import Heading from '/src/components/common/Heading'
+
 import ProjectCardsList from '/src/components/Main/Portfolio/ProjectCardsList'
 import Wrapper from '/src/components/Main/Portfolio/Wrapper'
 
@@ -23,12 +24,12 @@ const Portfolio = () => {
   ]
 
   return (
-    <Section id='portfolio'>
-      <Wrapper>
-        <Heading Tag='h2' dot>Portfolio</Heading>
-        <ProjectCardsList projects={projects} />
-      </Wrapper>
-    </Section>
+    <Wrapper>
+      <Heading Tag='h2' dot>
+        My_Portfolio
+      </Heading>
+      <ProjectCardsList projects={projects} />
+    </Wrapper>
   )
 }
 
