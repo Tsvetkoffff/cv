@@ -21,11 +21,3 @@
     @apply absolute left-[20px] top-[50%] -translate-y-1/2;
   }
 }
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0 calc(20px - (100vw - 100%)) 0 0;
-}
